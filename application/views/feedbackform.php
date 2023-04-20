@@ -19,7 +19,8 @@
 
 
         <h2 align="center">FeedbackForm</h2><br>
-
+        <div id="google_element"> Choose Language</div>
+			  <br>
         <?php 
           if ($this->session->flashdata('msg')){
           echo "<h4>".$this->session->flashdata('msg')."</h4>";
@@ -102,6 +103,21 @@
     </div>
     <?php echo form_close(); ?>
     </script>
+    <script src="http://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
+			
+			<script>
+
+function loadGoogleTranslate(){
+    new google.translate.TranslateElement({
+        pageLanguage: 'en', 
+        includedLanguages: 'en,si,ta', 
+        layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL
+    }, 'google_element');
+}
+
+
+
+			</script>
 </body>
 
 </html>
