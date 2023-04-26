@@ -8,9 +8,9 @@ class addsessiondetails_model extends CI_Model{
         $this->load->library('ciqrcode');
 
         // Generate a QR code
-        $params['data'] = $link; // Change this to the data you want to encode
+        $params['data'] = $link; 
         $params['size'] = 300;
-        $params['savename'] = FCPATH . 'assets/images/'.$SessionID.'.png'; // Change this to the filename and path where you want to save the QR code image
+        $params['savename'] = FCPATH . 'assets/images/'.$SessionID.'.png'; //qr image savepath
         $this->ciqrcode->generate($params);
 
         $data=[

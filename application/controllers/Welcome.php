@@ -12,10 +12,18 @@ class Welcome extends CI_Controller {
 	{
 		$this->load->view('login');
 	}
+	public function startcamera()
+	{
+		$this->load->view('cameraforattendancemark');
+	}
 
 	public function markattendance($sessionID)
 	{
-		$this->load->view('attendancemark');
+		$this->db->select('*');
+		$this->db->from('sessionstable');
+		$query = $this->db->get();
+		$data['sessions'] = $query->result_array();
+		$this->load->view('attendancemark',$data);
 	}
 
 	public function markattendancecompleted($sessionID,$serviceID)
