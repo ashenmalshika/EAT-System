@@ -38,7 +38,7 @@
                                                 <th>session</th>
                                                 </tr>
                                                
-                                                <?php if(!empty($table1)){foreach ($table1 as $row){ ?>  
+                                                <?php if(!empty($employee_attendance)){foreach ($employee_attendance as $row){ ?>  
                                                     <tr>
                                                         <td><?php echo $row['name']; ?></td>
                                                         <td><?php echo $row['id']; ?></td>
