@@ -2,7 +2,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Show Attendance</title>
+  <title>Attendance sheet</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
   
@@ -17,9 +17,9 @@
                         <div class="col-md-8 offset-md-2" style='margin-top: 15px'>
                             <form method="post">
                                 <div class="input-group">
-                                    <input type="search" class="form-control form-control-lg" placeholder="Type Session ID To see participations" name="search">
+                                    <input type="search" class="form-control form-control-lg" placeholder="Type Session Name To see Attendance" name="keyword">
                                     <div class="input-group-append">
-                                    <button type="submit" class="btn btn-info" name="submit">Search</button>
+                                    <button type="submit" class="btn btn-info" name="search">Search</button>
                                     </div>
                                 </div>
                             </form>
@@ -27,62 +27,29 @@
                         <div class="col-12">
                             <div class="card" style='margin-top: 15px'>
                                 <div class="card-header">
-                                    <h3 class="card-title">Attendance Sheet</h3>
+                                    <h3 class="card-title">Attendance sheet</h3>
                                 </div>
                                 <!-- /.card-header -->
                                 <div class="card-body">
-                                    <table id="example1" class="table table-bordered table-striped">
-                                    <?php
-                                          $servername = "localhost";
-                                          $username = "root";
-                                          $password = "";
-                                          $database = "eatsystem";
-                                           //create connection
-                                           $connection = new mysqli($servername,$username,$password,$database);
-
-                                           //check connection
-                                           if ($connection->connect_error){
-                                              die("Connection failed :". $connection->connect_error);
-                                           }
-                                           
-                                        
-                                    if (isset($_POST['submit'])){
-                                        $search=$_POST['search'];
-                                        $sql = "SELECT * FROM employee_attendance WHERE SessionID='$search'";
-                                        $result = $connection->query($sql);
-
-                                        if ($result){
-                                            if(mysqli_num_rows($result)>0){
-                                                echo '    <thead>
+                                    <table id="example1" class="table table-bordered table-striped">                            
                                                 <tr>
-                                                    <th>Session ID</th>
-                                                    <th>Service ID</th>
+                                                <th>Name</th>
+                                                <th>Service ID</th>
+                                                <th>session</th>
                                                 </tr>
-                                                </thead>';
-
-                                                while($row = $result->fetch_assoc()){
-                                                    echo"<tbody>
+                                               
+                                                <?php if(!empty($table1)){foreach ($table1 as $row){ ?>  
                                                     <tr>
-                                                    <td>$row[SessionID]</td>
-                                                    <td>$row[service_id]</td>
-                                                </tr>
-                                                </tbody>
-                                                    
-                                                    ";
-                                                 }
-                                                 
-                                                
-
-                                            }else{
-                                                echo
-                                                '<h6 class=text-danger> data not found</h6>';
-                                             }
-                                        }
-                                    }
-                                
-                                        ?>
-                                
-                                    
+                                                        <td><?php echo $row['name']; ?></td>
+                                                        <td><?php echo $row['id']; ?></td>
+                                                        <td><?php echo $row['session_name']; ?></td>
+                                                    </tr>                                                   
+                                                <?php
+                                                    }} else{ echo
+                                                        '<h1 class=text-danger> data not found</h1>';?>
+                                                        <?php
+                                                    }
+                                                ;?>                                    
                                     </table>
                                 </div>
                                 <!-- /.card-body -->
