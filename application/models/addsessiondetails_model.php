@@ -3,7 +3,7 @@ class addsessiondetails_model extends CI_Model{
 
     function adddetails(){
         $SessionID = date("His") . mt_rand(11,99);
-        $link = "http://localhost/codeigniter/markattendance/" .$SessionID; 
+        $link = "http://localhost/codeigniter/enterserviceid/" .$SessionID; 
         // Load the QR code library
         $this->load->library('ciqrcode');
 

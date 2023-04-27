@@ -12,9 +12,22 @@ class Welcome extends CI_Controller {
 	{
 		$this->load->view('login');
 	}
-	public function startcamera()
+
+	public function enterserviceid($sessionID)
 	{
-		$this->load->view('cameraforattendancemark');
+		$this->db->select('*');
+		$this->db->from('sessionstable');
+		$query = $this->db->get();
+		$data['sessions'] = $query->result_array();
+		$this->load->view('serviceidinputpage',$data);
+	}
+
+	public function startcamera($section2)
+	{
+		echo $section2;
+		$serviceID = $this->input->post('serviceid-input');
+		echo $serviceID;
+		redirect('Welcome/takephoto/'.$section2.'/'.$serviceID);
 	}
 
 	public function markattendance($sessionID)
@@ -24,6 +37,11 @@ class Welcome extends CI_Controller {
 		$query = $this->db->get();
 		$data['sessions'] = $query->result_array();
 		$this->load->view('attendancemark',$data);
+	}
+
+	public function takephoto($sessionID,$serviceID)
+	{
+		$this->load->view('cameraforattendancemark');
 	}
 
 	public function markattendancecompleted($sessionID,$serviceID)

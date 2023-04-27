@@ -89,7 +89,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');?>
                                         <td> <?php echo $row->sessionDate; ?></td>
                                         <td> <?php echo $row->lecturerName; ?></td>
                                         <td> <?php echo $row->sessionTime; ?></td>                                           
-                                        <?php $link = "http://localhost/codeigniter/markattendance/" . $row->SessionID; ?> 
+                                        <?php $link = "http://localhost/codeigniter/enterserviceid/" . $row->SessionID; ?> 
                                         <td><?php echo "<a href='$link'>$link</a>"; ?></td>
                                         <td>  
                                                 <img style='width: 150px' src="<?php echo base_url('assets/images/'.$row->SessionID.'.png') ?>" alt="QR Code">
