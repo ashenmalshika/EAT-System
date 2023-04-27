@@ -25,10 +25,15 @@ class Dashboard extends CI_Controller{
         $this->load->view('template/footer');
     }
     public function showattendance(){
+        $this->load->model('showattendancemodel');
+        $keyword = $this->input->post('keyword');
+		$data = array();
+		$data['employee_attendance']=$this->showattendancemodel->get_all_list($keyword);
+
 		$this->load->view('template/header');
         $this->load->view('template/topmenu');
         $this->load->view('template/sidemenu');
-        $this->load->view('template/showattendancecontent');
+        $this->load->view('template/showattendancecontent',$data);
         $this->load->view('template/footer');
 	}
 	public function showfeedback(){

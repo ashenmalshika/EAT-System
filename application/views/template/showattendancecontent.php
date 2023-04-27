@@ -33,16 +33,12 @@
                                 <div class="card-body">
                                     <table id="example1" class="table table-bordered table-striped">                            
                                                 <tr>
-                                                <th>Name</th>
-                                                <th>Service ID</th>
-                                                <th>session</th>
+                                                    <th>Session ID</th>
                                                 </tr>
                                                
                                                 <?php if(!empty($employee_attendance)){foreach ($employee_attendance as $row){ ?>  
                                                     <tr>
-                                                        <td><?php echo $row['name']; ?></td>
-                                                        <td><?php echo $row['id']; ?></td>
-                                                        <td><?php echo $row['session_name']; ?></td>
+                                                        <td><?php echo $row['service_id']; ?></td>
                                                     </tr>                                                   
                                                 <?php
                                                     }} else{ echo
