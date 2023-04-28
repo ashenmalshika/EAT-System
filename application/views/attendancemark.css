@@ -67,8 +67,7 @@
     font-family: 'Open Sans', sans-serif;
     font-size: 25px;
     margin-bottom: 10px;
-    text-shadow: 1px 1px hsl(251, 76%, 11%);
-    color: rgb(22, 22, 93);
+    color: hsl(251, 76%, 11%);
 }
 
 #time {
@@ -76,7 +75,6 @@
     font-family: 'Open Sans', sans-serif;
     font-size: 20px;
     margin-bottom: 50px;
-    text-shadow: 1px 1px hsl(251, 76%, 11%);
     color: hsl(251, 76%, 11%);
 }
 
