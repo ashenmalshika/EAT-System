@@ -58,3 +58,4 @@ $route['enterserviceid/(:any)'] = 'Welcome/enterserviceid/$1';
 $route['createsession']='Dashboard/createsession';
 $route['showattendance']='Dashboard/showattendance';
 $route['showfeedback']='Dashboard/showfeedback';
+$route['takephoto/(:any)/(:any)']='Welcome/takephoto/$1/$2';

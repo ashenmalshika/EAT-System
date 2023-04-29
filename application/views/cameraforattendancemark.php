@@ -72,13 +72,27 @@
 
 <body>
     <div class='container'>
+        <?php 
+            $sessionID = $this->uri->segment(3);
+        ?>
+        <?php 
+            $serviceID = $this->uri->segment(4);
+        ?>
+
+        
         <video id="video" width="320" height="240" autoplay></video>
         <div class=btn>
             <button id="capture">Capture Photo</button>
             
         </div>
         <canvas id="canvas" width="320" height="240"></canvas>
-        <button id="markatt" style="display:none;">Mark Attendance</button>
+
+        <?php echo form_open('Welcome/addServiceidToDB/'.$sessionID); ?>
+            <input type="hidden" name="serviceid-input" value="<?php echo $serviceID; ?>">
+            <input type="hidden" name="image_data" id="image-data">   
+            <button id="markatt" style="display:none;">Mark Attendance</button>
+        <?php echo form_close(); ?>
+
         <div>
             <button id="retake" style="display:none;">Retake Photo</button>
         </div>
@@ -90,17 +104,16 @@
     let canvas = document.querySelector("#canvas");
     let retake = document.querySelector("#retake");
 
-    // Start camera stream when page loads
+ 
     window.onload = async function() {
         let stream = await navigator.mediaDevices.getUserMedia({ video: true, audio: false });
         video.srcObject = stream;
     }
 
     capture_button.addEventListener('click', function() {
-        // Hide video element
+       
         video.style.display = "none";
 
-        // Show canvas element
         canvas.style.display = "block";
 
         markatt.style.display = "inline-block";
@@ -109,10 +122,11 @@
         canvas.getContext('2d').drawImage(video, 0, 0, canvas.width, canvas.height);
         let image_data_url = canvas.toDataURL('image/jpeg');
 
-        // data url of the image
+        document.getElementById('image-data').value = image_data_url;
+
         console.log(image_data_url);
 
-        // Hide "Click Photo" button
+        // Hide capture button
         capture_button.style.display = "none";
     });
 
