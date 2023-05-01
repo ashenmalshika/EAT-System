@@ -33,16 +33,21 @@
                                 <div class="card-body">
                                     <table id="example1" class="table table-bordered table-striped">                            
                                                 <tr>
-                                                    <th>Session ID</th>
+                                                    <th>Service ID</th>
+                                                    <th>Photo</th>
                                                 </tr>
                                                
                                                 <?php if(!empty($employee_attendance)){foreach ($employee_attendance as $row){ ?>  
                                                     <tr>
                                                         <td><?php echo $row['service_id']; ?></td>
+                                                        <td>
+                                                            <?php $data=$row['employeephoto']; ?>
+                                                            <img src="<?php echo $data ?>" alt="image" width="170">
+                                                        </td>
                                                     </tr>                                                   
                                                 <?php
-                                                    }} else{ echo
-                                                        '<h1 class=text-danger> data not found</h1>';?>
+                                                    }} else{ 
+                                                        echo '<h1 class=text-danger> data not found</h1>';?>
                                                         <?php
                                                     }
                                                 ;?>                                    

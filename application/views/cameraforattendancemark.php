@@ -126,7 +126,6 @@
 
         console.log(image_data_url);
 
-        // Hide capture button
         capture_button.style.display = "none";
     });
 
