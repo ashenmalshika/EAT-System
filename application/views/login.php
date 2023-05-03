@@ -31,18 +31,20 @@
                 <p class="title">Login</p>
                 <?php echo form_open('Login/LoginUser'); ?>
                     <div class="form-control">
-                        <input type="text" name="username" placeholder="Username">
+                        <input type="text" name="username" placeholder="Username" value="<?php echo set_value('username'); ?>">
                         <i class="fas fa-user"></i>
                     </div>
                     <div class="form-control">
-                        <input type="password" name="password" placeholder="Password">
+                        <input type="password" name="password" placeholder="Password" value="<?php echo set_value('password'); ?>">
                         <i class="fas fa-unlock"></i>
                     </div>
-                    <?php echo validation_errors(); ?>
-                        <?php if($this->session->flashdata('errormsg')){
-                            echo "<h3>".$this->session->flashdata('errormsg')."</h3>";
-                            }
-                        ?>
+                    <?php if ($this->session->flashdata('error')): ?>
+                        <div class="error"><?php echo $this->session->flashdata('error'); ?></div>
+                    <?php endif; ?>
+                    <?php if($this->session->flashdata('errormsg')){
+                        echo "<p class='error'>".$this->session->flashdata('errormsg')."</p>";
+                        }
+                    ?>
                     <button type="submit" class="submit">Login</button>
                 <?php form_close(); ?>
             </div>

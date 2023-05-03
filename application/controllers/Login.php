@@ -7,6 +7,7 @@ class Login extends CI_Controller{
         $this->form_validation->set_rules('password','Password','required');
 
         if($this->form_validation->run()==FALSE){
+            $this->session->set_flashdata('error', validation_errors());
             $this->load->view('login');
         }else{
             $this->load->model('user_model');
