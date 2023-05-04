@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mark Attendance</title>
     <style>
        * {
@@ -65,7 +66,11 @@
             max-height: 100%;
             object-fit: contain;
         }
-
+        @media (max-width: 768px) {
+            .container {
+                max-width: 90%; /* reduce max width for smaller screens */
+            }
+        }
     </style>
         
 </head>
