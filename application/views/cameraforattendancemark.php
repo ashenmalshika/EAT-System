@@ -27,9 +27,7 @@
             border-radius: 10px;
             justify-content: center;
             background: #fff;
-
             padding: 10px;
-       
             box-shadow: 0 0 8px rgba(69, 206, 41, 0.1);
         }
 
@@ -52,8 +50,6 @@
             font-size: medium;
         }
 
-
-
         button:hover {
             background-color: #6c1c1c;
         }
@@ -68,7 +64,7 @@
         }
         @media (max-width: 768px) {
             .container {
-                max-width: 90%; /* reduce max width for smaller screens */
+                width: 90%;
             }
         }
     </style>
