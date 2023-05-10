@@ -1,3 +1,5 @@
+
+
 <html>
 <head>
   <meta charset="utf-8">
@@ -19,7 +21,7 @@
                                 <div class="input-group">
                                     <input type="search" class="form-control form-control-lg" placeholder="Type Session Name To see Attendance" name="keyword">
                                     <div class="input-group-append">
-                                    <button type="submit" class="btn btn-info" name="search">Search</button>
+                                    <button type="submit" class="btn btn-info" name="submit">Search</button>
                                     </div>
                                 </div>
                             </form>
@@ -31,26 +33,45 @@
                                 </div>
                                 <!-- /.card-header -->
                                 <div class="card-body">
-                                    <table id="example1" class="table table-bordered table-striped">                            
-                                                <tr>
-                                                    <th>Service ID</th>
-                                                    <th>Photo</th>
-                                                </tr>
+                                    <table id="example1" class="table table-bordered table-striped">
+                                   
+                                    <?php
                                                
-                                                <?php if(!empty($employee_attendance)){foreach ($employee_attendance as $row){ ?>  
-                                                    <tr>
-                                                        <td><?php echo $row['service_id']; ?></td>
-                                                        <td>
-                                                            <?php $data=$row['employeephoto']; ?>
-                                                            <img src="<?php echo $data ?>" alt="image" width="170">
-                                                        </td>
-                                                    </tr>                                                   
-                                                <?php
-                                                    }} else{ 
-                                                        echo '<h1 class=text-danger> data not found</h1>';?>
-                                                        <?php
-                                                    }
-                                                ;?>                                    
+                                               if(isset($_POST['submit'])){
+
+                                                   if($attendance_results->num_rows()>0){
+                                                       echo '    
+                                                       <tr>
+                                                           <th>Service ID</th>
+                                                           <th>Photo</th>
+                                                       </tr>
+                                                       ';
+                                                ?>
+                                                
+                                              
+                                               <?php
+                                               
+                                                 foreach ($attendance_results->result() as $row){ ?>
+                                                      
+                                              
+                                                  
+                                                   <tr>
+                                                   <td><?php echo $row->service_id; ?></td>
+                                                   <td><?php echo $row->employeephoto; ?>
+                                                   
+                                                    </td>
+                                               
+                                                   
+                                               </tr>
+                                               <?php
+                                                   }  }else{
+                                                       echo
+                                                       '<h4 class=text-danger>  DATA NOT FOUND!</h4>';
+                                                    } ;?> 
+                                                    <?php } ;?> 
+                                                    
+                                            
+                                    
                                     </table>
                                 </div>
                                 <!-- /.card-body -->

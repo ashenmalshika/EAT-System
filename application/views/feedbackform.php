@@ -516,7 +516,7 @@
 			<input type = "radio" name = "question_4" value = "Agree" id="question_4">
 			<label for="question_4" class="mcq19"> Agree </label> <br>
 
-			<input type = "radio" name = "question_4" value = " Strongly Agree " id="question_4">
+			<input type = "radio" name = "question_4" value = "Strongly Agree" id="question_4">
 			<label for="question_4" class="mcq20"> Strongly Agree </label> </br><br></br><br>
 
 
