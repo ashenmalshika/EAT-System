@@ -57,8 +57,8 @@
                                                   
                                                    <tr>
                                                    <td><?php echo $row->service_id; ?></td>
-                                                   <td><?php echo $row->employeephoto; ?>
-                                                   
+                                                   <td><?php $data=$row->employeephoto; ?>
+                                                        <img src="<?php echo $data ?>" alt="image" width="170">
                                                     </td>
                                                
                                                    

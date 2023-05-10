@@ -31,9 +31,7 @@
             <button type='submit'>Open Camera</button>    
         <?php echo form_close(); ?>
         
-        <a href='#'>
-            <button id='feedback-btn'>Feedback Form</button>
-        </a>        
+        
     </div>
 
 </body>

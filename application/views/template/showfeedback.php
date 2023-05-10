@@ -571,7 +571,7 @@
                                                <?php
                                                    }  }else{
                                                        echo
-                                                       '<h1 class=text-danger>  DATA NOT FOUND!</h1>';
+                                                        '<h4 class=text-danger>  DATA NOT FOUND!</h4>';
                                                     } ;?> 
                                                     <?php } ;?> 
                                                     
