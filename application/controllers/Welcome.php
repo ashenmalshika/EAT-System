@@ -51,19 +51,37 @@ class Welcome extends CI_Controller {
 
 	public function feedbackform($sessionID,$serviceID)
 	{
-		$this->load->view('feedbackform');
+		$this->load->model('checkfeedback_model');
+		$rowExists = $this->checkfeedback_model->checkRow($sessionID, $serviceID);
+		if ($rowExists) {
+			$this->session->set_flashdata('message', 'Feedbackform already Submitted.<br> Thank you.');
+			$this->load->view('messagepage');
+		}else{
+			$this->load->view('feedbackform');
+		}
+		
 	}
 
 	public function addServiceidToDB($section2) {
-		$this->load->model('addserviceid_model');    
+		$this->load->model('addserviceid_model');
+		$this->load->model('checkfeedback_model');
+
 		$serviceID = $this->input->post('serviceid-input');
 	
 		// Check SessionID & ServiceID
 		$rowExists = $this->addserviceid_model->checkRow($section2, $serviceID);
 	
 		if ($rowExists) {
-			$this->session->set_flashdata('message', 'Attendance already marked <br> Thank you.');
-			$this->load->view('messagepage');
+			$rowExistsForFeedback = $this->checkfeedback_model->checkRow($section2, $serviceID);
+
+			if ($rowExistsForFeedback) {
+				$this->session->set_flashdata('message', 'Attendance already Marked & Feedback already Submitted.<br> Thank you.');
+				$this->load->view('messagepage');
+			}else{
+				$this->session->set_flashdata('message', 'Attendance already Marked');
+				redirect('Welcome/markattendancecompleted/'.$section2.'/'.$serviceID); 
+			}
+
 		} else {
 			$response = $this->addserviceid_model->addServiceId($section2);
 			
@@ -77,7 +95,8 @@ class Welcome extends CI_Controller {
 
 	public function thankmsg()
 	{
-		$this->load->view('finalpage');
+		$this->session->set_flashdata('message', 'Form Submitted Succesfully<br> Thank you.');
+		$this->load->view('messagepage');
 	}
 }
 ?>
