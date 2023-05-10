@@ -36,15 +36,5 @@
         </a>        
     </div>
 
-    <script>
-        const button = document.getElementById("feedback-btn");
-        
-        button.addEventListener("click", function() {
-            button.style.backgroundColor = "Orange";
-            button.textContent = "Mark Attendance First.";
-        
-        });
-    </script>
-
 </body>
 </html>

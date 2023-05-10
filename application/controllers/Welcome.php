@@ -54,15 +54,26 @@ class Welcome extends CI_Controller {
 		$this->load->view('feedbackform');
 	}
 
-	public function addServiceidToDB($section2){	
-        $this->load->model('addserviceid_model');    
-        $response=$this->addserviceid_model->addServiceId($section2);
-        if($response){
-			$serviceID = $this->input->post('serviceid-input');
-			$this->session->set_flashdata('message', 'Attendance Marked!');
-			redirect('Welcome/markattendancecompleted/'.$section2.'/'.$serviceID);      
-        }    
-    }
+	public function addServiceidToDB($section2) {
+		$this->load->model('addserviceid_model');    
+		$serviceID = $this->input->post('serviceid-input');
+	
+		// Check SessionID & ServiceID
+		$rowExists = $this->addserviceid_model->checkRow($section2, $serviceID);
+	
+		if ($rowExists) {
+			$this->session->set_flashdata('message', 'Attendance already marked <br> Thank you.');
+			$this->load->view('messagepage');
+		} else {
+			$response = $this->addserviceid_model->addServiceId($section2);
+			
+			if ($response) {
+				$this->session->set_flashdata('message', 'Attendance Marked!');
+				redirect('Welcome/markattendancecompleted/'.$section2.'/'.$serviceID);      
+			}
+		}
+	}
+	
 
 	public function thankmsg()
 	{
