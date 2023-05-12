@@ -4,70 +4,12 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <title>Mark Attendance</title>
     <style>
-       * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: "serif";
-        }   
-
-        body {
-            height: 100vh;
-            width: 100%;
-            background: rgb(230, 230, 255);
-        }
-
-        .container {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            border-radius: 10px;
-            justify-content: center;
-            background: #fff;
-            padding: 10px;
-            box-shadow: 0 0 8px rgba(69, 206, 41, 0.1);
-        }
-
-        video {
-            border: 2px solid;
-            border-radius: 10px;
-            border-color:white;
-        }
-
-        button {
-            background-color: #a82d2d;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            margin-top: 20px;
-            cursor: pointer;
-            margin-left:0px;
-            width: 100%;
-            height: 50px;
-            font-size: medium;
-        }
-
-        button:hover {
-            background-color: #6c1c1c;
-        }
-
-        canvas {
-            border: 5px solid white;
-            border-radius: 5px;
-            display: none;
-            max-width: 100%;
-            max-height: 100%;
-            object-fit: contain;
-        }
-        @media (max-width: 768px) {
-            .container {
-                width: 90%;
-            }
-        }
-    </style>
+	    <?php include 'camerapage.css'; ?>	
+	</style>
         
 </head>
 

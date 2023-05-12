@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
+
 <head>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 	<title>Enter Service ID</title>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<style>
-	    <?php include 'attendancemark.css'; ?>	
+	    <?php include 'serviceidinputpage.css'; ?>	
 	</style>	
 </head>
 <body>
@@ -19,7 +22,7 @@
                 $sessionName = $session['sessionName'];
                 $sessionTime = $session['sessionTime'];
             }    
-       
+                                                                                                                                            
         } ?>    
 
         <p id=subject><?php echo 'Session - '.$sessionName ; ?></p> 
@@ -34,17 +37,17 @@
                
     </div>
 
-    <script>
-        function validateForm() {
-            var serviceId = document.getElementById("in-1").value;
-            var errMsg = document.querySelector(".error");
-            if (serviceId === "") {
-                errMsg.style.display = "inline-block";
-                errMsg.textContent = "Service ID is required";
-                return false;
-            }
-            return true;
+<script>
+    function validateForm() {
+        var serviceId = document.getElementById("in-1").value;
+        var errMsg = document.querySelector(".error");
+        if (serviceId === "") {
+            errMsg.style.display = "inline-block";
+            errMsg.textContent = "Service ID is required";
+            return false;
         }
+        return true;
+    }
 </script>
 
 </body>

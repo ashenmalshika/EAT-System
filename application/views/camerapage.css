@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'sans-serif';
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+}
+
+#capture,
+#retake,
+#markatt {
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    width: 100%;
+    color: #fff;
+    background-color: #205c63;
+    padding: 14px 64px;
+    letter-spacing: 1.0px;
+    cursor: pointer;
+    transition: opacity 0.4s;
+}
+
+#capture {
+    margin-top: 32px;
+}
+
+#markatt {
+    margin-bottom: 20px;
+    margin-top: 32px;
+}
+
+#video {
+    margin-top: 201px;
+}
+
+#video,
+#canvas {
+    border-radius: 5px;
+    width: 100%;
+    height: auto;
+}
