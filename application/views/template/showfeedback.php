@@ -113,7 +113,7 @@
                                                             ?>
                                                     
                                                      
-                                    </table>
+                                    
 
                                     <style>
                                                  .grid-container {
@@ -520,15 +520,16 @@
                                 <!-- /.container -->
                                    </div>
                                     <?php }
-                                     else{  echo'<span>.<span>';}?>
-                                        <table id="example1" class="table table-bordered table-striped"  >
-                                   
+                                     else{  echo'<span >.<span>';}?>
+                                       
+                                       <table id="example1" class="table table-bordered table-striped"  > 
                                    <?php
                                                
                                                if(isset($_POST['submit'])){
 
                                                    if($results->num_rows()>0){
-                                                       echo '    
+                                                       echo '   
+                                                       <table id="example1" class="table table-bordered table-striped"  > 
                                                        <tr>
                                                            <th>session</th>
                                                            <th>Service ID</th>
@@ -571,10 +572,11 @@
                                                <?php
                                                    }  }else{
                                                        echo
-                                                        '<h4 class=text-danger>  DATA NOT FOUND!</h4>';
+                                                       '<h4 class=text-danger>  DATA NOT FOUND!</h4>';
                                                     } ;?> 
                                                     <?php } ;?> 
                                                     
+                                                  </table>  
                                 </div>
                                 <!-- /.card-body -->
                             </div>
@@ -582,12 +584,13 @@
                             <!-- /.card -->   
                         </section >
                          
-                        
+                       
                     </div>
                 </div >
             </div >
         </div >
     </div >
+   
 
 
 
