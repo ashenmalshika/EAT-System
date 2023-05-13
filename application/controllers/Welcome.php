@@ -78,7 +78,7 @@ class Welcome extends CI_Controller {
 				$this->session->set_flashdata('message', 'Attendance already Marked & Feedback already Submitted.<br> Thank you.');
 				$this->load->view('messagepage');
 			}else{
-				$this->session->set_flashdata('message', 'Attendance already Marked. Fill feedbackform');
+				$this->session->set_flashdata('message', 'Attendance already Marked. Fill the feedbackform');
 				redirect('Welcome/markattendancecompleted/'.$section2.'/'.$serviceID); 
 			}
 

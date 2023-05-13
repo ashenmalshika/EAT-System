@@ -1,45 +1,190 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial scale=1">
-	
 	<title>language</title>
-	<link rel="stylesheet" href="./main.css">
 	
-
-
 	<style>
 
-		body{
+body{
 
-			font-family: 'Lato' , sans-serif;
+	font-family: 'Lato' , sans-serif;
+}
+
+
+.form-container{
+
+	margin-left: 10px;
+	background: #d2def2;
+	padding: 20px 30px 20px 30px;
+	width: 950px;
+	height:3260px;
+	border-radius: 20px;
+	float: left;
+	position: absolute;
+	top: 230%;
+	bottom:10;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+}
+
+h2{
+
+
+	color: blue;
+	
+
+}
+
+
+
+p {
+
+
+	  font-weight: bold;
+
+
+}
+
+
+
+h4{
+
+	color: Blue;
+}
+
+.btn-text-center{
+
+	text-align: center;	
+
+}
+
+
+
+input[type=text] {
+
+	border: 1px solid blue;
+	border-radius: 4px;
+	height: 50px;
+	weight: 100px;
+
+}
+
+
+
+input[type='radio']:after {
+
+	width: 10px;
+	height: 10px;
+	border-radius: 15px;
+	background-color: #d1d3d1;
+	content: '';
+	display: inline-block;
+	border: 2px solid blue;
+
+}
+
+input[type='radio']:checked:after {
+
+	width: 10px;
+	height: 10px;
+	border-radius: 15px;
+	background-color:brown; /*#ffa500;*/
+	content: '';
+	display: inline-block;
+	border: 2px solid white;
+
+}
+
+
+input{
+
+
+
+	margin-bottom: 20px;
+	
+}
+
+button{
+
+	  width: 20%;
+	   height: 30px;
+	  background: blue;
+	  color:  #fff;
+	   border: 0;
+	outline: 0;
+	   border-radius: 5px;
+	   cursor: pointer;
+	   margin: 20px 0;
+	   font-weight: 500;
+}
+
+
+
+.google_element{
+
+background:#333;	
+
+}
+
+a{
+
+text-transform: uppercase;
+color: #fff;
+text-decoration: none;
+padding: 0 15px;
+font-weight: bold;
+background: blue;
+font-size: 14px;
+}
+
+a.active{
+
+background: #f21313;
+
+
+}
+
+
+
+/* Responsive page for 900px */
+
+
+@media screen and (max-width:900px){
+
+
+	body{
+
+		font-family: 'Lato' , sans-serif;
 		}
 
 
 		.form-container{
 
-			margin-left: 10px;
-			background: #d2def2;
-			padding: 20px 30px 20px 30px;
-			width: 850px;
-			border-radius: 20px;
-			float: left;
-			position: absolute;
-			top: 225%;
-			bottom:10;
-			left: 50%;
-			transform: translate(-50%, -50%);
+		margin-left: 10px;
+		background: #d2def2;
+		padding: 20px 30px 20px 30px;
+		width: 400px;
+		height: 3350px;
+		border-radius: 20px;
+		float: left;
+		position: absolute;
+		top: 240%;
+		bottom:10;
+		left: 50%;
+		transform: translate(-50%, -50%);
 
 		}
+
+		
 
 		h2{
 
 
-			color: blue;
-			
+		color: blue;
+
 
 		}
 
@@ -48,21 +193,19 @@
 		p {
 
 
- 		 	font-weight: bold;
-	
+		font-weight: bold;
+		font-size: 14px;
 
 		}
-
-
 
 		h4{
 
-			color: Blue;
+		color: Blue;
 		}
-		
+
 		.btn-text-center{
 
-			text-align: center;	
+		text-align: center;	
 
 		}
 
@@ -70,16 +213,134 @@
 
 		input[type=text] {
 
-			border: 1px solid blue;
-			border-radius: 4px;
-			height: 50px;
-			weight: 100px;
+		border: 1px solid blue;
+		border-radius: 4px;
+		height: 50px;
+		weight: 100px;
+		width: 100%;
 
 		}
 
 
 
 		input[type='radio']:after {
+
+		width: 10px;
+		height: 10px;
+		border-radius: 15px;
+		background-color: #d1d3d1;
+		content: '';
+		display: inline-block;
+		border: 2px solid blue;
+
+		}
+
+		input[type='radio']:checked:after {
+
+		width: 10px;
+		height: 10px;
+		border-radius: 15px;
+		background-color:brown; /*#ffa500;*/
+		content: '';
+		display: inline-block;
+		border: 2px solid white;
+
+		}
+
+
+		button{
+
+		width: 20%;
+		height: 30px;
+		background: blue;
+		color:  #fff;
+		border: 0;
+		outline: 0;
+		border-radius: 5px;
+		cursor: pointer;
+		margin: 20px 0;
+		font-weight: 500;
+		}
+					
+	}
+
+
+
+			/* responsive for 600px*/
+
+			
+			@media screen and (max-width:600px){
+
+			
+			body{
+
+			font-family: 'Lato' , sans-serif;
+			}
+
+
+			.form-container{
+
+			margin-left: 10px;
+			background: #d2def2;
+			padding: 20px 30px 20px 30px;
+			width: 300px;
+			height: 3950px;
+			border-radius: 20px;
+			float: left;
+			position: absolute;
+			top: 285%;
+			bottom:10;
+			left: 50%;
+			transform: translate(-50%, -50%);
+
+			}
+
+			h2{
+
+
+			color: blue;
+
+
+			}
+
+
+
+			p {
+
+
+			font-weight:bold ;
+
+
+			}
+
+			
+
+			h4{
+
+			color: Blue;
+			}
+
+			.btn-text-center{
+
+			text-align: center;	
+
+			}
+
+
+
+			input[type=text] {
+
+			border: 1px solid blue;
+			border-radius: 4px;
+			height: 50px;
+			weight: 100px;
+			width: 100%;
+
+			}
+
+
+
+			input[type='radio']:after {
 
 			width: 10px;
 			height: 10px;
@@ -89,9 +350,9 @@
 			display: inline-block;
 			border: 2px solid blue;
 
-		}
+			}
 
-		input[type='radio']:checked:after {
+			input[type='radio']:checked:after {
 
 			width: 10px;
 			height: 10px;
@@ -101,66 +362,44 @@
 			display: inline-block;
 			border: 2px solid white;
 
-		}
+			}
 
 
-		input{
+			input{
 
 
 
 			margin-bottom: 20px;
+
+			}
+
+			button{
+
+			width: 20%;
+			height: 30px;
+			background: blue;
+			color:  #fff;
+			border: 0;
+			outline: 0;
+			border-radius: 5px;
+			cursor: pointer;
+			margin: 20px 0;
+			font-weight: 500;
+			}
+
 			
+
+			
+
+
 		}
 
-        button{
+		/*375-667*/
 
-          	width: 20%;
-	       	height: 30px;
-	      	background: blue;
-	      	color:  #fff;
-	       	border: 0;
-	    	outline: 0;
-	       	border-radius: 5px;
-	       	cursor: pointer;
-	       	margin: 20px 0;
-	       	font-weight: 500;
-		}
+		@media screen and (max-width:500px){
 
-
-
-		.google_element{
-	
-		background:#333;	
-	
-		}
-
-		a{
-	
-		text-transform: uppercase;
-		color: #fff;
-		text-decoration: none;
-		padding: 0 15px;
-		font-weight: bold;
-		background: blue;
-		font-size: 14px;
-		}
-
-		a.active{
-	
-		background: #f21313;
-	
-	
-		}
-		
-		
-
-		/* Responsive page for 900px */
-
-
-		@media screen and (max-width:900px){
-
-		
-			body{
+			
+				body{
 
 				font-family: 'Lato' , sans-serif;
 				}
@@ -171,18 +410,17 @@
 				margin-left: 10px;
 				background: #d2def2;
 				padding: 20px 30px 20px 30px;
-				width: 400px;
+				width: 260px;
+				height: 4000px;
 				border-radius: 20px;
 				float: left;
 				position: absolute;
-				top: 240%;
+				top: 310%;
 				bottom:10;
-				left: 50%;
+				left: 48%;
 				transform: translate(-50%, -50%);
 
 				}
-
-				
 
 				h2{
 
@@ -197,10 +435,12 @@
 				p {
 
 
-				font-weight: bold;
-				font-size: 14px;
+				font-weight:bold ;
+
 
 				}
+
+
 
 				h4{
 
@@ -273,139 +513,9 @@
 				margin: 20px 0;
 				font-weight: 500;
 				}
-							
-			}
 
 
-
-					/* responsive for 600px*/
-
-					
-					@media screen and (max-width:600px){
-
-					
-					body{
-
-					font-family: 'Lato' , sans-serif;
-					}
-
-
-					.form-container{
-
-					margin-left: 10px;
-					background: #d2def2;
-					padding: 20px 30px 20px 30px;
-					width: 300px;
-					border-radius: 20px;
-					float: left;
-					position: absolute;
-					top: 255%;
-					bottom:10;
-					left: 50%;
-					transform: translate(-50%, -50%);
-
-					}
-
-					h2{
-
-
-					color: blue;
-
-
-					}
-
-
-
-					p {
-
-
-					font-weight:bold ;
-
-
-					}
-
-					
-
-					h4{
-
-					color: Blue;
-					}
-
-					.btn-text-center{
-
-					text-align: center;	
-
-					}
-
-
-
-					input[type=text] {
-
-					border: 1px solid blue;
-					border-radius: 4px;
-					height: 50px;
-					weight: 100px;
-					width: 100%;
-
-					}
-
-
-
-					input[type='radio']:after {
-
-					width: 10px;
-					height: 10px;
-					border-radius: 15px;
-					background-color: #d1d3d1;
-					content: '';
-					display: inline-block;
-					border: 2px solid blue;
-
-					}
-
-					input[type='radio']:checked:after {
-
-					width: 10px;
-					height: 10px;
-					border-radius: 15px;
-					background-color:brown; /*#ffa500;*/
-					content: '';
-					display: inline-block;
-					border: 2px solid white;
-
-					}
-
-
-					input{
-
-
-
-					margin-bottom: 20px;
-
-					}
-
-					button{
-
-					width: 20%;
-					height: 30px;
-					background: blue;
-					color:  #fff;
-					border: 0;
-					outline: 0;
-					border-radius: 5px;
-					cursor: pointer;
-					margin: 20px 0;
-					font-weight: 500;
-					}
-
-				}
-				
-		
-
-		
-
-
-	</style>	
+</style>	
 
 
 </head>
