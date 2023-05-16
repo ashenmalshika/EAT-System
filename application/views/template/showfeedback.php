@@ -53,61 +53,61 @@
                                                           
                                                         
                                                          // ANSWER 1................................................................................................
-                                                          $a1_avg1 = round(($num1[0] /$num2)*100);
-                                                          $a1_avg2 = round(($num1[1] /$num2)*100);
-                                                          $a1_avg3 = round(($num1[2] /$num2)*100);
-                                                          $a1_avg4 = round(($num1[3] /$num2)*100);
-                                                          $a1_avg5 = round(($num1[4] /$num2)*100);
+                                                          $a1_avg1 = round((($num1[0] /$num2)*100),1);
+                                                          $a1_avg2 = round((($num1[1] /$num2)*100),1);
+                                                          $a1_avg3 = round((($num1[2] /$num2)*100),1);
+                                                          $a1_avg4 = round((($num1[3] /$num2)*100),1);
+                                                          $a1_avg5 = round((($num1[4] /$num2)*100),1);
                                                       //ANSWER 2................................................................................................-->
-                                                          $a2_avg1 = round(($num3[0] /$num2)*100);
-                                                          $a2_avg2 = round(($num3[1] /$num2)*100);
-                                                          $a2_avg3 = round(($num3[2] /$num2)*100);
-                                                          $a2_avg4 = round(($num3[3] /$num2)*100);
-                                                          $a2_avg5 = round(($num3[4] /$num2)*100);
+                                                          $a2_avg1 = round((($num3[0] /$num2)*100),1);
+                                                          $a2_avg2 = round((($num3[1] /$num2)*100),1);
+                                                          $a2_avg3 = round((($num3[2] /$num2)*100),1);
+                                                          $a2_avg4 = round((($num3[3] /$num2)*100),1);
+                                                          $a2_avg5 = round((($num3[4] /$num2)*100),1);
 
                                                           //ANSWER 3................................................................................................-->
-                                                          $a3_avg1 = round(($num4[0] /$num2)*100);
-                                                          $a3_avg2 = round(($num4[1] /$num2)*100);
-                                                          $a3_avg3 = round(($num4[2] /$num2)*100);
-                                                          $a3_avg4 = round(($num4[3] /$num2)*100);
-                                                          $a3_avg5 = round(($num4[4] /$num2)*100);
+                                                          $a3_avg1 = round((($num4[0] /$num2)*100),1);
+                                                          $a3_avg2 = round((($num4[1] /$num2)*100),1);
+                                                          $a3_avg3 = round((($num4[2] /$num2)*100),1);
+                                                          $a3_avg4 = round((($num4[3] /$num2)*100),1);
+                                                          $a3_avg5 = round((($num4[4] /$num2)*100),1);
                                                         //ANSWER 4.............................................................................................
-                                                          $a4_avg1 = round(($num5[0] /$num2)*100);
-                                                          $a4_avg2 = round(($num5[1] /$num2)*100);
-                                                          $a4_avg3 = round(($num5[2] /$num2)*100);
-                                                          $a4_avg4 = round(($num5[3] /$num2)*100);
-                                                          $a4_avg5 = round(($num5[4] /$num2)*100);
+                                                          $a4_avg1 = round((($num5[0] /$num2)*100),1);
+                                                          $a4_avg2 = round((($num5[1] /$num2)*100),1);
+                                                          $a4_avg3 = round((($num5[2] /$num2)*100),1);
+                                                          $a4_avg4 = round((($num5[3] /$num2)*100),1);
+                                                          $a4_avg5 = round((($num5[4] /$num2)*100),1);
                                                       //ANSWER 5.............................................................................................
 
-                                                          $a5_avg1 = round(($num6[0] /$num2)*100);
-                                                          $a5_avg2 = round(($num6[1] /$num2)*100);
-                                                          $a5_avg3 = round(($num6[2] /$num2)*100);
-                                                          $a5_avg4 = round(($num6[3] /$num2)*100);
-                                                          $a5_avg5 = round(($num6[4] /$num2)*100);
+                                                          $a5_avg1 = round((($num6[0] /$num2)*100),1);
+                                                          $a5_avg2 = round((($num6[1] /$num2)*100),1);
+                                                          $a5_avg3 = round((($num6[2] /$num2)*100),1);
+                                                          $a5_avg4 = round((($num6[3] /$num2)*100),1);
+                                                          $a5_avg5 = round((($num6[4] /$num2)*100),1);
                                                         //ANSWER 6.............................................................................................
-                                                          $a6_avg1 = round(($num7[0] /$num2)*100);
-                                                          $a6_avg2 = round(($num7[1] /$num2)*100);
-                                                          $a6_avg3 = round(($num7[2] /$num2)*100);
-                                                          $a6_avg4 = round(($num7[3] /$num2)*100);
-                                                          $a6_avg5 = round(($num7[4] /$num2)*100);
+                                                          $a6_avg1 = round((($num7[0] /$num2)*100),1);
+                                                          $a6_avg2 = round((($num7[1] /$num2)*100),1);
+                                                          $a6_avg3 = round((($num7[2] /$num2)*100),1);
+                                                          $a6_avg4 = round((($num7[3] /$num2)*100),1);
+                                                          $a6_avg5 = round((($num7[4] /$num2)*100),1);
                                                        //ANSWER 7.............................................................................................
-                                                          $a7_avg1 = round(($num8[0] /$num2)*100);
-                                                          $a7_avg2 = round(($num8[1] /$num2)*100);
-                                                          $a7_avg3 = round(($num8[2] /$num2)*100);
-                                                          $a7_avg4 = round(($num8[3] /$num2)*100);
-                                                          $a7_avg5 = round(($num8[4] /$num2)*100);
+                                                          $a7_avg1 = round((($num8[0] /$num2)*100),1);
+                                                          $a7_avg2 = round((($num8[1] /$num2)*100),1);
+                                                          $a7_avg3 = round((($num8[2] /$num2)*100),1);
+                                                          $a7_avg4 = round((($num8[3] /$num2)*100),1);
+                                                          $a7_avg5 = round((($num8[4] /$num2)*100),1);
                                                        //ANSWER 8.............................................................................................
-                                                          $a8_avg1 = round(($num9[0] /$num2)*100);
-                                                          $a8_avg2 = round(($num9[1] /$num2)*100);
-                                                          $a8_avg3 = round(($num9[2] /$num2)*100);
-                                                          $a8_avg4 = round(($num9[3] /$num2)*100);
-                                                          $a8_avg5 = round(($num9[4] /$num2)*100);
+                                                          $a8_avg1 = round((($num9[0] /$num2)*100),1);
+                                                          $a8_avg2 = round((($num9[1] /$num2)*100),1);
+                                                          $a8_avg3 = round((($num9[2] /$num2)*100),1);
+                                                          $a8_avg4 = round((($num9[3] /$num2)*100),1);
+                                                          $a8_avg5 = round((($num9[4] /$num2)*100),1);
                                                         //ANSWER 9.............................................................................................
-                                                          $a9_avg1 = round(($num10[0] /$num2)*100);
-                                                          $a9_avg2 = round(($num10[1] /$num2)*100);
-                                                          $a9_avg3 = round(($num10[2] /$num2)*100);
-                                                          $a9_avg4 = round(($num10[3] /$num2)*100);
-                                                          $a9_avg5 = round(($num10[4] /$num2)*100);
+                                                          $a9_avg1 = round((($num10[0] /$num2)*100),1);
+                                                          $a9_avg2 = round((($num10[1] /$num2)*100),1);
+                                                          $a9_avg3 = round((($num10[2] /$num2)*100),1);
+                                                          $a9_avg4 = round((($num10[3] /$num2)*100),1);
+                                                          $a9_avg5 = round((($num10[4] /$num2)*100),1);
                                                          
                                                         
                                                             ?>
