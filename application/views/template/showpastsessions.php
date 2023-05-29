@@ -27,7 +27,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');?>
                 <div class="col-12" style='margin-top: 15px'>   
                     <div class="card">
                         <div class="card-header">
-                        <h3 class="card-title">Details of Past Sessions</h3>
+                            <h3 class="card-title">Details of Past Sessions</h3>
+                            <div class="float-right">
+                                    <input type="text" id="searchInput" placeholder="Search...">
+                                    <button onclick="searchTable()" type="button">Search</button>
+                            </div>
                         </div>
                         <!-- /.card-header -->
                         <div class="card-body">
@@ -63,6 +67,29 @@ defined('BASEPATH') OR exit('No direct script access allowed');?>
 
 
 <!-- /.card -->
+<script>
+        function searchTable() {
+            var input = document.getElementById("searchInput").value.toLowerCase();
+            var table = document.getElementById("example2");
+            var rows = table.getElementsByTagName("tr");
+
+            for (var i = 0; i < rows.length; i++) {
+                var cells = rows[i].getElementsByTagName("td");
+                var match = false;
+                for (var j = 0; j < cells.length; j++) {
+                    if (cells[j].innerHTML.toLowerCase().indexOf(input) > -1) {
+                        match = true;
+                        break;
+                    }
+                }
+                if (match) {
+                    rows[i].style.display = "";
+                } else {
+                    rows[i].style.display = "none";
+                }
+            }
+        }
+</script>
 
 </body>
 
