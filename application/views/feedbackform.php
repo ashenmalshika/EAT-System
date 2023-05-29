@@ -2,507 +2,41 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial scale=1">
-	<title>language</title>
+	<meta name="viewport" content="width=device-width, initial scale=1.0">
+	
+	<title>Feedback Form</title>
+	<link rel="stylesheet" href="./main.css">
 	
 	<style>
-
-body{
-
-	font-family: 'Lato' , sans-serif;
-}
-
-
-.form-container{
-
-	margin-left: 10px;
-	background: #d2def2;
-	padding: 20px 30px 20px 30px;
-	width: 950px;
-	height:3260px;
-	border-radius: 20px;
-	float: left;
-	position: absolute;
-	top: 230%;
-	bottom:10;
-	left: 50%;
-	transform: translate(-50%, -50%);
-
-}
-
-h2{
-
-
-	color: blue;
-	
-
-}
-
-
-
-p {
-
-
-	  font-weight: bold;
-
-
-}
-
-
-
-h4{
-
-	color: Blue;
-}
-
-.btn-text-center{
-
-	text-align: center;	
-
-}
-
-
-
-input[type=text] {
-
-	border: 1px solid blue;
-	border-radius: 4px;
-	height: 50px;
-	weight: 100px;
-
-}
-
-
-
-input[type='radio']:after {
-
-	width: 10px;
-	height: 10px;
-	border-radius: 15px;
-	background-color: #d1d3d1;
-	content: '';
-	display: inline-block;
-	border: 2px solid blue;
-
-}
-
-input[type='radio']:checked:after {
-
-	width: 10px;
-	height: 10px;
-	border-radius: 15px;
-	background-color:brown; /*#ffa500;*/
-	content: '';
-	display: inline-block;
-	border: 2px solid white;
-
-}
-
-
-input{
-
-
-
-	margin-bottom: 20px;
-	
-}
-
-button{
-
-	  width: 20%;
-	   height: 30px;
-	  background: blue;
-	  color:  #fff;
-	   border: 0;
-	outline: 0;
-	   border-radius: 5px;
-	   cursor: pointer;
-	   margin: 20px 0;
-	   font-weight: 500;
-}
-
-
-
-.google_element{
-
-background:#333;	
-
-}
-
-a{
-
-text-transform: uppercase;
-color: #fff;
-text-decoration: none;
-padding: 0 15px;
-font-weight: bold;
-background: blue;
-font-size: 14px;
-}
-
-a.active{
-
-background: #f21313;
-
-
-}
-
-
-
-/* Responsive page for 900px */
-
-
-@media screen and (max-width:900px){
-
-
-	body{
-
-		font-family: 'Lato' , sans-serif;
-		}
-
-
-		.form-container{
-
-		margin-left: 10px;
-		background: #d2def2;
-		padding: 20px 30px 20px 30px;
-		width: 400px;
-		height: 3350px;
-		border-radius: 20px;
-		float: left;
-		position: absolute;
-		top: 240%;
-		bottom:10;
-		left: 50%;
-		transform: translate(-50%, -50%);
-
-		}
-
-		
-
-		h2{
-
-
-		color: blue;
-
-
-		}
-
-
-
-		p {
-
-
-		font-weight: bold;
-		font-size: 14px;
-
-		}
-
-		h4{
-
-		color: Blue;
-		}
-
-		.btn-text-center{
-
-		text-align: center;	
-
-		}
-
-
-
-		input[type=text] {
-
-		border: 1px solid blue;
-		border-radius: 4px;
-		height: 50px;
-		weight: 100px;
-		width: 100%;
-
-		}
-
-
-
-		input[type='radio']:after {
-
-		width: 10px;
-		height: 10px;
-		border-radius: 15px;
-		background-color: #d1d3d1;
-		content: '';
-		display: inline-block;
-		border: 2px solid blue;
-
-		}
-
-		input[type='radio']:checked:after {
-
-		width: 10px;
-		height: 10px;
-		border-radius: 15px;
-		background-color:brown; /*#ffa500;*/
-		content: '';
-		display: inline-block;
-		border: 2px solid white;
-
-		}
-
-
-		button{
-
-		width: 20%;
-		height: 30px;
-		background: blue;
-		color:  #fff;
-		border: 0;
-		outline: 0;
-		border-radius: 5px;
-		cursor: pointer;
-		margin: 20px 0;
-		font-weight: 500;
-		}
-					
-	}
-
-
-
-			/* responsive for 600px*/
-
-			
-			@media screen and (max-width:600px){
-
-			
-			body{
-
-			font-family: 'Lato' , sans-serif;
-			}
-
-
-			.form-container{
-
-			margin-left: 10px;
-			background: #d2def2;
-			padding: 20px 30px 20px 30px;
-			width: 300px;
-			height: 3950px;
-			border-radius: 20px;
-			float: left;
-			position: absolute;
-			top: 285%;
-			bottom:10;
-			left: 50%;
-			transform: translate(-50%, -50%);
-
-			}
-
-			h2{
-
-
-			color: blue;
-
-
-			}
-
-
-
-			p {
-
-
-			font-weight:bold ;
-
-
-			}
-
-			
-
-			h4{
-
-			color: Blue;
-			}
-
-			.btn-text-center{
-
-			text-align: center;	
-
-			}
-
-
-
-			input[type=text] {
-
-			border: 1px solid blue;
-			border-radius: 4px;
-			height: 50px;
-			weight: 100px;
-			width: 100%;
-
-			}
-
-
-
-			input[type='radio']:after {
-
-			width: 10px;
-			height: 10px;
-			border-radius: 15px;
-			background-color: #d1d3d1;
-			content: '';
-			display: inline-block;
-			border: 2px solid blue;
-
-			}
-
-			input[type='radio']:checked:after {
-
-			width: 10px;
-			height: 10px;
-			border-radius: 15px;
-			background-color:brown; /*#ffa500;*/
-			content: '';
-			display: inline-block;
-			border: 2px solid white;
-
-			}
-
-
-			input{
-
-
-
-			margin-bottom: 20px;
-
-			}
-
-			button{
-
-			width: 20%;
-			height: 30px;
-			background: blue;
-			color:  #fff;
-			border: 0;
-			outline: 0;
-			border-radius: 5px;
-			cursor: pointer;
-			margin: 20px 0;
-			font-weight: 500;
-			}
-
-			
-
-			
-
-
-		}
-
-		/*375-667*/
-
-		@media screen and (max-width:500px){
-
-			
-				body{
-
-				font-family: 'Lato' , sans-serif;
-				}
-
-
-				.form-container{
-
-				margin-left: 10px;
-				background: #d2def2;
-				padding: 20px 30px 20px 30px;
-				width: 260px;
-				height: 4000px;
-				border-radius: 20px;
-				float: left;
-				position: absolute;
-				top: 310%;
-				bottom:10;
-				left: 48%;
-				transform: translate(-50%, -50%);
-
-				}
-
-				h2{
-
-
-				color: blue;
-
-
+				*{
+				  box-sizing: border-box; 
 				}
 
 
 
-				p {
-
-
-				font-weight:bold ;
-
-
+				.form-container {
+				
+				  
+				  background: #d2def2;
+				  padding: 20px 30px 20px 30px;
+				  float: left;
+				  width: 400px; /* The width is 20%, by default */
+				  border-radius: 20px;
+				  margin-left: 1px;
+				  height: 3350px;
+				  bottom:10;
+				  left: 60%;
+							
+								
+				  
 				}
 
+ 
+ 
+ 
+ 				button{
 
-
-				h4{
-
-				color: Blue;
-				}
-
-				.btn-text-center{
-
-				text-align: center;	
-
-				}
-
-
-
-				input[type=text] {
-
-				border: 1px solid blue;
-				border-radius: 4px;
-				height: 50px;
-				weight: 100px;
-				width: 100%;
-
-				}
-
-
-
-				input[type='radio']:after {
-
-				width: 10px;
-				height: 10px;
-				border-radius: 15px;
-				background-color: #d1d3d1;
-				content: '';
-				display: inline-block;
-				border: 2px solid blue;
-
-				}
-
-				input[type='radio']:checked:after {
-
-				width: 10px;
-				height: 10px;
-				border-radius: 15px;
-				background-color:brown; /*#ffa500;*/
-				content: '';
-				display: inline-block;
-				border: 2px solid white;
-
-				}
-
-
-				input{
-
-
-
-				margin-bottom: 20px;
-
-				}
-
-				button{
-
-				width: 20%;
+				width: 25%;
 				height: 30px;
 				background: blue;
 				color:  #fff;
@@ -513,9 +47,104 @@ background: #f21313;
 				margin: 20px 0;
 				font-weight: 500;
 				}
+				
+				
+				
+					input[type=text] {
+		
+					border: 1px solid blue;
+					border-radius: 4px;
+					height: 50px;
+					weight: 100px;
+		
+				}
+				
+				
+					input[type='radio']:after {
+
+					width: 10px;
+					height: 10px;
+					border-radius: 15px;
+					background-color: #d1d3d1;
+					content: '';
+					display: inline-block;
+					border: 2px solid blue;
+		
+				}
+		
+					input[type='radio']:checked:after {
+		
+					width: 10px;
+					height: 10px;
+					border-radius: 15px;
+					background-color:brown; /*#ffa500;*/
+					content: '';
+					display: inline-block;
+					border: 2px solid white;
+		
+				}
+				
+ 
+		 		a{
+			
+				text-transform: uppercase;
+				color: #fff;
+				text-decoration: none;
+				padding: 0 15px;
+				font-weight: bold;
+				background: blue;
+				font-size: 14px;
+				}
+		
+				a.active{
+			
+				background: #f21313;
+			
+			
+				}
+        
+
+				p {
 
 
-</style>	
+				font-weight: bold;
+				font-size: 14px;
+
+				}
+                
+                h2{
+                
+                color: blue;
+                
+                }
+
+				
+				h4{
+
+					color: Blue;
+				}
+
+				.comment{
+
+					
+			
+
+				}
+				
+
+
+        
+        
+
+
+
+/* Use a media query to add a break point at 2000px: */
+@media screen and (max-width: 2000px) {
+  .form-container, .container, .comment{
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
+</style>
 
 
 </head>
@@ -523,15 +152,16 @@ background: #f21313;
 
 	<div class="container">
 	
-
+    
 		
 	<div class="content">
 	<div class="form-container">
 	<?php echo validation_errors(); ?>
-  <?php  $serviceID = $this->uri->segment(4); $sessionID=$this->uri->segment(3);  ?>
-        <?php echo form_open('feedbackform/employee/'.$sessionID.'/'.$serviceID); ?>
+	<?php  $serviceID = $this->uri->segment(4); $sessionID=$this->uri->segment(3);  ?>
+	<?php echo form_open('feedbackform/employee/'.$sessionID.'/'.$serviceID); ?>
 
-		    <h2 align="center" class="title">FeedBackForm</h2><br>
+
+		<h2 align="center" class="title">FeedBackForm</h2><br><br>
 
 		<div align="center" class="langWrap">
 		
@@ -626,7 +256,7 @@ background: #f21313;
 			<input type = "radio" name = "question_4" value = "Agree" id="question_4">
 			<label for="question_4" class="mcq19"> Agree </label> <br>
 
-			<input type = "radio" name = "question_4" value = "Strongly Agree" id="question_4">
+			<input type = "radio" name = "question_4" value = "Strongly Agree " id="question_4">
 			<label for="question_4" class="mcq20"> Strongly Agree </label> </br><br></br><br>
 
 
@@ -718,14 +348,17 @@ background: #f21313;
 			<label for="question_9" class="mcq44"> Agree </label> <br>
 
 			<input type = "radio" name = "question_9" value = "Strongly Agree" id="question_9"> 
-			<label for="question_9" class="mcq45"> Strongly Agree </label> </br><br></br><br>
+			<label for="question_9" class="mcq45"> Strongly Agree </label> </br><br></br>
 
 		
 
 
 			<p class="qw_10"> 10. Your suggestions for improvements. </p><br>
-			<input type = "text" size="122"  name = "question_10">  </br>
 
+
+			<div class="comment">
+			<input type = "text"   name = "question_10">  </br>
+			</div>
 
 			<div class="btn-text-center">
   			<button>Submit</button>
@@ -1115,4 +748,3 @@ background: #f21313;
 
 </body>
 </html>
-

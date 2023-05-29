@@ -19,7 +19,7 @@
                         <div class="col-md-8 offset-md-2" style='margin-top: 15px'>
                             <form method="post">
                                 <div class="input-group">
-                                    <input type="search" class="form-control form-control-lg" placeholder="Type Session Name To see Attendance" name="keyword">
+                                    <input type="search" class="form-control form-control-lg" placeholder="Type Session ID To see Attendance" name="keyword">
                                     <div class="input-group-append">
                                     <button type="submit" class="btn btn-info" name="submit">Search</button>
                                     </div>
