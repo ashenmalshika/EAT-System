@@ -1,7 +1,7 @@
 
 
 <?php
-class feedbackmod extends CI_Model{
+class FeedbackMod extends CI_Model{
 	
 	// Count Total List
 	

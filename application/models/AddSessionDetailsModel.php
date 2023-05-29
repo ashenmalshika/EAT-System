@@ -1,5 +1,5 @@
 <?php
-class addsessiondetails_model extends CI_Model{
+class AddSessionDetailsModel extends CI_Model{
 
     function adddetails(){
         $SessionID = date("His") . mt_rand(11,99);

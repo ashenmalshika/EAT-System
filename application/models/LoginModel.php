@@ -1,5 +1,5 @@
 <?php
-class user_model extends CI_Model{
+class LoginModel extends CI_Model{
 
     function getdata(){
         $username=$this->input->post('username');

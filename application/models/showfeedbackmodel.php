@@ -1,5 +1,5 @@
 <?php
-class showfeedbackmodel extends CI_Model{
+class ShowFeedbackModel extends CI_Model{
 	
 	// Get all list
 	function get_all_list($keyword){

@@ -1,5 +1,5 @@
 <?php
-class addserviceid_model extends CI_Model{
+class AddServiceIdModel extends CI_Model{
 
     public function checkRow($section2, $serviceID) {
         $this->db->where('sessionID', $section2);

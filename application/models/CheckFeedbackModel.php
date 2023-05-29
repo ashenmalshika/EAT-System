@@ -1,5 +1,5 @@
 <?php
-class checkfeedback_model extends CI_Model{
+class CheckFeedbackModel extends CI_Model{
 
     public function checkRow($sessionID,$serviceID) {
         $this->db->where('sessionID', $sessionID);

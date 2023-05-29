@@ -10,8 +10,8 @@ class Login extends CI_Controller{
             $this->session->set_flashdata('error', validation_errors());
             $this->load->view('login');
         }else{
-            $this->load->model('user_model');
-            $result=$this->user_model->getdata();
+            $this->load->model('LoginModel');
+            $result=$this->LoginModel->getdata();
 
             if($result!=false){
                 $userdata=array(

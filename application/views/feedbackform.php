@@ -158,7 +158,7 @@
 	<div class="form-container">
 	<?php echo validation_errors(); ?>
 	<?php  $serviceID = $this->uri->segment(4); $sessionID=$this->uri->segment(3);  ?>
-	<?php echo form_open('feedbackform/employee/'.$sessionID.'/'.$serviceID); ?>
+	<?php echo form_open('FeedbackForm/employee/'.$sessionID.'/'.$serviceID); ?>
 
 
 		<h2 align="center" class="title">FeedBackForm</h2><br><br>

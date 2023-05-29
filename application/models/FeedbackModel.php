@@ -1,6 +1,6 @@
 <?php
 
-class feedback_model extends CI_Model{
+class FeedbackModel extends CI_Model{
 
     function insertUserdata($sessionID,$serviceID){
 

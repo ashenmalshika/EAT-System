@@ -1,6 +1,6 @@
 <?php
 
-class feedbackform extends CI_Controller {
+class FeedbackForm extends CI_Controller {
 
 public function employee($sessionID,$serviceID){
 
@@ -19,8 +19,8 @@ public function employee($sessionID,$serviceID){
     if ($this->form_validation->run() == FALSE){
         $this->load->view('feedbackform');
     } else{
-        $this->load->model('feedback_model');
-        $response = $this->feedback_model->insertUserdata($sessionID,$serviceID);
+        $this->load->model('FeedbackModel');
+        $response = $this->FeedbackModel->insertUserdata($sessionID,$serviceID);
     }
 
     if ($response){ 

@@ -1,5 +1,5 @@
 <?php
-class showattendancemodel extends CI_Model{
+class ShowAttendanceModel extends CI_Model{
 	
 	// Get all list
 	function get_all_list($keyword){
