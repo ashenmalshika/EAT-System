@@ -39,7 +39,7 @@
                
           <li class="nav-header">Home</li>
           <li class="nav-item">
-            <a href=<?php echo base_url('index.php/Dashboard/createsession');?> class="nav-link">
+            <a href=<?php echo base_url('Dashboard/createsession');?> class="nav-link">
               <i class="nav-icon far fa-plus-square"></i>
               <p>
                 Create a Session
@@ -49,7 +49,7 @@
           </li>
 
           <li class="nav-item">
-            <a href=<?php echo base_url('index.php/Dashboard/showpastsessions');?> class="nav-link">
+            <a href=<?php echo base_url('Dashboard/showpastsessions');?> class="nav-link">
               <i class="nav-icon far fa-calendar-alt"></i>
               <p>
                 Show Past Sessions
@@ -59,7 +59,7 @@
           </li>
 
           <li class="nav-item">
-            <a href=<?php echo base_url('index.php/Dashboard/showattendance');?>  class="nav-link">
+            <a href=<?php echo base_url('Dashboard/showattendance');?>  class="nav-link">
               <i class="nav-icon fa fa-address-card"></i>
               <p>
                 Show Attendance
@@ -69,7 +69,7 @@
           </li>
 
           <li class="nav-item">
-            <a href=<?php echo base_url('index.php/Dashboard/showfeedback');?>  class="nav-link">
+            <a href=<?php echo base_url('Dashboard/showfeedback');?>  class="nav-link">
               <i class="nav-icon fas fa-comments"></i>
               <p>
                 Show Feedbacks
@@ -79,7 +79,7 @@
           </li>
 
           <li class="nav-item">
-            <a href=<?php echo base_url('index.php/login/LogoutUser');?>  class="nav-link">
+            <a href=<?php echo base_url('login/LogoutUser');?>  class="nav-link">
               <i class="nav-icon fas fa-calendar-alt"></i>
               <p>
                 Logout

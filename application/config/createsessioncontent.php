@@ -90,7 +90,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');?>
                                         <td> <?php echo $row->lecturerName; ?></td>
                                         <td> <?php echo $row->sessionTime; ?></td>                                           
                                         <?php $link = "http://localhost/codeigniter/enterserviceid/" . $row->SessionID; ?> 
-                                        <td style="max-width: 250px; word-wrap: break-word;"><?php echo "<a href='$link'>$link</a>"; ?></td>
+                                        <td><?php echo "<a href='$link'>$link</a>"; ?></td>
                                         <td>  
                                                 <img style='width: 150px' src="<?php echo base_url('assets/images/'.$row->SessionID.'.png') ?>" alt="QR Code">
                                         </td>
